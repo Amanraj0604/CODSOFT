@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Portfoilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@600&family=Chivo+Mono:wght@100&family=EB+Garamond&family=Prompt:wght@200;400&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Vh4VJbAwAYeD5irSc");
+        })();
+    </script>
+    
+    <script>
+        function sendMail() {
+            var params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            };
+            const serviceId = "service_bkua8zk";
+            const templateId = "template_wnpp6s7";
+    
+            emailjs.send(serviceId, templateId, params)
+                .then(
+                    function(response) { 
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("message").value = "";
+                        console.log("Sent successfully:", response);
+                        alert("Your message sent successfully");
+                    },
+                    function(error) {
+                        console.log("Failed to send:", error);
+                        alert("An error occurred while sending your message");
+                    }
+                );
+        }
+    </script>
+    
+</head>
+
+
+<body>
+    <div class="naiv">
+        <div class="left">
+            <div class="logo">.Sindi</div>
+            <div class="menu">
+                <a href="#skills">Skils</a>
+                <a href="#projects">Projects</a>
+                <a href="#Achivements">Achivements</a>
+                <a href="#about">About</a>
+                <a href="#contacts">Contact Us</a>
+
+            </div>
+            <div class="right">
+               <a href="tel:+91 6202384284">+91 6202384284</a> 
+            </div>
+        </div>
+    </div>
+    <div class="home-layout" id="about">
+        <div class="left1">
+            <h2>Hii There , I'm </h2>
+            <h1> AMAN RAJ</h1>
+
+            <h4>A passionate Full Stack Softwere Developer.having exprience of building web applications with React js /
+                Node Js / express js / MongoDb / html&CSS and some other cool libraries and fremworks</h4>
+                <a href="#contacts"><button class="but">Contact Me</button></a>
+            <a href="https://drive.google.com/file/d/1OwArGwh7-zWcksf_EDqvCZFZ6eLtoBhW/view?usp=sharing" download="22MCR004 Aman Raj.pdf"><button class="but">See My Resume</button></a>
+        </div>
+        <div class="right1">
+            <img class="imgclass" src="./img/man3.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="ag-format-container" id="skills">
+        <br>
+        <h1>Skills</h1>
+        <div class="ag-courses_box">
+            <div class="ag-courses_item">
+
+                <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+
+                    <div class="ag-courses-item_title">
+                        <p>Program & Database Skills</p>
+                        <ul> Program
+                            <li>C Programm</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                        </ul>
+                        <ul>
+                            Database
+                            <li>SQL</li>
+                            <li>MongoDb</li>
+                            <li>FireBase</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+
+                    <div class="ag-courses-item_title">
+                        <p>Devlopment Skills</p>
+                        <ul>Front End
+                            <li>Html</li>
+                            <li>React Js</li>
+                            <li>CSS</li>
+                            <li>SCSS</li>
+                            <li>BootStrap</li>
+                        </ul>
+                        <ul>
+                            Backend
+                            <li>JavaScript</li>
+                            <li>NodeJS</li>
+                            <li>ExpresJS</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+
+                    <div class="ag-courses-item_title">
+                        Area Of Interest
+                        <ul>
+                            <li>Web Devlopment</li>
+                            <li>DataBase</li>
+                            <li>Data Structure</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="ag-format-container">Proficiency</h1><br>
+    <div class="proficiency" id="prof">
+        <div class="left3">
+            <h2>Programming</h2>
+            <div class="parent">
+                <div class="w3-greyy"></div>
+            </div>
+
+            <h2>Web Devlopment</h2>
+            <div class="parent">
+                <div class="w3-greyy" style="height:40px;
+                width:90%;"></div>
+            </div>
+
+            <h2>Backend</h2>
+            <div class="parent">
+                <div class="w3-greyy" style="height:40px;
+                width:75%;"></div>
+            </div>
+
+        </div>
+        <div class="right3">
+            <img class="imgcartoon" src="./img/img1.png" alt="">
+        </div>
+    </div>
+    <br><br><br>
+    <h1 class="ag-format-container"id="projects">Projects</h1><br>
+    <div class="main">
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="./img/portfolio.png" alt="" />
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Portfolio</h2>
+                        <div class="card_text">
+                            <p>Designed and developed a personal portfolio website using cutting-edge web technologies,
+                                including React.js, SCSS, and Mail.js, to showcase my skills and projects effectively.
+                                <br>
+                                Link: <a
+                                    href="https://amanraj-portfolio.000webhostapp.com/">https://amanraj-portfolio.000webhostapp.com</a>
+                            </p>
+                            <hr />
+                            <p><strong>Technologies Used:</strong>
+                                <br>
+                                React.js <br>
+                                SCSS (Sass) <br>
+                                Mail.js <br>
+                                Git and GitHub for version control <br>
+                                Hosting platform (000.webhostapp.com)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="./img/Screenshot (138).png" alt="" />
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Online Cab Booking</h2>
+                        <div class="card_text">
+                            <p>Led the development of an end-to-end online cab booking system leveraging React.js for
+                                the front end, Node.js for the backend, and Firebase for real-time data management and
+                                authentication.
+                            </p>
+                            <p>The online cab booking system project showcases my expertise in full-stack development,
+                                particularly in React.js, Node.js, and Firebase. It demonstrates my ability to build a
+                                user-friendly and secure platform with real-time capabilities, payment integration, and
+                                scalability considerations.
+                                <br>
+                                GitHub Link: <a
+                                    href="https://github.com/Amanraj0604/Cab-app">https://github.com/Amanraj0604/Cab-app</a>
+                            </p>
+                            <hr />
+                            <p><strong>Technologies Used:</strong>
+                                <br>
+                                React.js <br>
+                                CSS (Sass) <br>
+                                Node.js <br>
+                                FairBase <br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="./img/Screenshot (166).png" alt="A side view of a plate of figs and berries." />
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Weather Forecast Application </h2>
+                        <div class="card_text">
+                            <p>The Weather Forecast Application demonstrates my proficiency in Python programming and
+                                GUI development using Tkinter. It showcases my ability to integrate external data
+                                sources (API) for real-time information and my skills in data parsing and presentation.
+                                <br>
+                                GitHub Link: <a
+                                    href="https://github.com/Amanraj0604/Python-Tkinter-">https://github.com/Amanraj0604/Python-Tkinter-</a>
+                            </p>
+                            <hr />
+                            <p><strong>Technologies Used:</strong>
+
+                                <br>Python <br>
+                                Tkinter (Python GUI library) <br>
+                                Weather data API (e.g., OpenWeatherMap) <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="./img/Screenshot (167).png" alt="A side view of a plate of figs and berries." />
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Employee Management System</h2>
+                        <div class="card_text">
+                            <p>The Employee Management System using Python with a Tkinter-based graphical user interface
+                                (GUI) for streamlined employee data management, integrated with an SQL database via SQL
+                                Workbench for data storage and retrieval. <br>
+                                GitHub Link: <a
+                                    href="https://github.com/Amanraj0604/Employee-Management-System">https://github.com/Amanraj0604/Employee-Management-System</a>
+                            </p>
+                            <hr />
+                            <p>
+                                <strong>Technologies Used:</strong>
+
+                                <br> Python <br>
+                                Tkinter (Python GUI library) <br>
+                                SQL database (e.g., MySQL) <br>
+                                SQL Workbench (or a similar SQL tool)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="./img/Screenshot (170).png" alt="" />
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Bakery Shop</h2>
+                        <div class="card_text">
+                            <p>The Bakery Shop Website project showcases my expertise in web development using HTML,
+                                CSS, and JavaScript. It demonstrates my ability to create visually appealing and
+                                functional websites that engage users and facilitate online interactions, such as
+                                product browsing and ordering. <br>
+                                GitHub Link: <a
+                                    href="https://github.com/Amanraj0604/Bakery">https://github.com/Amanraj0604/Bakery</a>
+                            </p>
+                            <hr />
+                            <p> <strong>Technologies Used:</strong>
+                                <br>
+                                HTML <br>
+                                CSS <br>
+                                JavaScript <br>
+                                Git (Version Control)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="./img/blog.png" alt="A side view of a plate of figs and berries." />
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Blog Web Application</h2>
+                        <div class="card_text">
+                            <p>The Blog Application project exemplifies my proficiency in full-stack web development,
+                                showcasing expertise in React.js for dynamic user interfaces, Node.js and Express.js for
+                                server-side logic, and MongoDB for efficient data storage.
+
+                                This project highlights my ability to design secure and scalable RESTful APIs, manage
+                                user authentication, and implement essential features like creating and viewing blog
+                                posts. It also demonstrates my commitment to thorough testing and debugging for a
+                                reliable and user-friendly application.
+
+                                Feel free to customize this description to emphasize your specific contributions and
+                                achievements in the project. Tailoring the description to your unique experience will
+                                make it more impactful on your resume.
+
+                                GitHub Link: <a
+                                    href="https://github.com/Amanraj0604/Blog-Application-MERN">https://github.com/Amanraj0604/Blog-Application-MERN</a>
+
+                            </p>
+                            <hr />
+                            <p>
+                                <strong>Technologies Used:</strong> <br>
+                                React.js <br>
+                                Node.js <br>
+                                Express.js <br>
+                                MongoDB <br>
+                                RESTful API design <br>
+                                Git (Version Control) <br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br><br>
+    <h1 class="ag-format-container" id="Achivements">Achivements and Certifications</h1><br><br>
+    <div class="certificate">
+        <div class="main">
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="./img/java.png" alt="" style="background-color: rgb(255, 255, 255);" />
+                        </div>
+                        <div class="card_content">
+                            <h2 class="card_title">Java Basic</h2>
+                            <div class="card_text">
+                                <p>
+                                    <a href="https://www.hackerrank.com/certificates/19a08d5e4823"><button
+                                            class="watch">View Certificate</button></a>
+                                <p>
+                                    Issued by<strong>HackerRank</strong><br>
+                                    Date Obtained <strong>14 Jun 2023</strong>
+                                </p>
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="./img/sql2.png" alt="" style="background-color: rgb(253, 255, 255);" />
+                        </div>
+                        <div class="card_content">
+                            <h2 class="card_title">SQL Basic</h2>
+                            <div class="card_text">
+                                <p>
+                                    <a href="https://www.hackerrank.com/certificates/fdc3b879167c"><button
+                                            class="watch">View Certificate</button></a>
+                                <p>
+                                    Issued by:<strong>HackerRank</strong><br>
+                                    Date Obtained :<strong>12 Mar 2023</strong>
+                                </p>
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="./img/problem.png" alt="" style="background-color: rgb(253, 255, 255);" />
+                        </div>
+                        <div class="card_content">
+                            <h2 class="card_title">Problem Solving</h2>
+                            <div class="card_text">
+                                <p>
+                                    <a href="https://www.hackerrank.com/certificates/4153e74c8b5c"><button
+                                            class="watch">View Certificate</button></a>
+                                <p>
+                                    Issued by:<strong>HackerRank</strong><br>
+                                    Date Obtained :<strong>28 Sep 2023</strong>
+                                </p>
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <h1 class="ag-format-container" id="contacts">Contacts</h1><br><br>
+    <div class="contacts">
+        <div class="main">
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_content">
+                            <h2 class="card_title"><img class="img-icon" src="./img/whatsapp.png" alt=""></h2>
+                            <div class="card_text">
+                                <p>
+                                    <a href="https://api.whatsapp.com/send?phone=62023842843">
+                                        <button class="watch">Watsapp</button></a>
+                                <p>
+                                    <strong>GO To The Watsapp Profile</strong>
+                                    <br> Watsapp: <Strong>6202384284</Strong>
+                                </p>
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_content">
+                            <h2 class="card_title"><img class="img-icon" src="./img/github.png" alt=""></h2>
+                            <div class="card_text">
+                                <p>
+                                    <a href="https://github.com/Amanraj0604"><button class="watch">Github</button></a>
+                                <p>
+                                    <strong>GO To The Github Profile</strong>
+                                </p>
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_content">
+                            <h2 class="card_title"><img class="img-icon" src="./img/social.png" alt=""></h2>
+                            <div class="card_text">
+                                <p>
+                                    <a href="https://www.linkedin.com/in/aman-raj-772328256/"><button
+                                            class="watch">LinkedIn</button></a>
+                                <p>
+                                    <strong>GO To The LinkedIn Profile</strong>
+                                </p>
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><br><br>
+    <div class="mail">
+        <div class="first">
+            <img src="./img/hand.png" alt="">
+        </div>
+        <div class="second">
+            <form>
+                Name: <br>
+                <input type="text" id="name">
+                <br> Email: <br>
+                <input type="email" id="email">
+                <br> Message: <br>
+                <textarea name="" id="message" cols="30" rows="8"></textarea><br>
+                <button class="sub" type="button" onclick="sendMail()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <div class="footer">
+        <div class="start">
+            <h1>.Sindi</h1>
+        </div>
+        <div class="center">
+            <ul>
+                <li><a href="#skills"> Skill </a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#Achivements"> Achievements </a></li>
+                <li><a href="#prof"> Proficiency </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#contacts"> Contact Us </a></li>
+            </ul>
+        </div>
+        <div class="end">
+            <a href="mailto:anpi17639@gmail.com"><img src="./img/email.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/aman-raj-772328256/"><img src="./img/social.png" alt=""></a>
+            <a href="https://github.com/Amanraj0604"><img src="./img/github.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=6202384284"><img src="./img/whatsapp.png" alt=""></a>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
